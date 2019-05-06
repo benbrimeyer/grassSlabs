@@ -18,9 +18,7 @@ public class ModItems {
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event){
         event.getRegistry().registerAll(
-
-                new Item(new Item.Properties()).setRegistryName(Reference.MOD_ID, "tutorial_dust")
-
+                new Item(new Item.Properties().maxStackSize(32).group(ItemGroup.MISC)).setRegistryName(Reference.MOD_ID, "tutorial_dust")
         );
     }
 }
